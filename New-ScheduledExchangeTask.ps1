@@ -62,7 +62,7 @@
     .PARAMETER Password
     Password for TaskUser. 
     If not provided, the task will be automatically be created as "Run only when user is logged on"
-    If provided, the task will automaticall be created as "Run whether the user is logged on or not"
+    If provided, the task will automatically be created as "Run whether the user is logged on or not"
     
     .EXAMPLE 
     .\New-ScheduledExchangeTask.ps1 -TaskName "My Task" -ScriptName TaskScript1.ps1 -ScriptPath D:\Automation -TaskUser DOMAIN\ServiceAccount -Password P@ssw0rd
