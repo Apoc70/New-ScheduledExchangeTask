@@ -1,4 +1,4 @@
-# Get-DailyBackupAlerts.ps1
+# New-ScheduledExchangeTask.ps1
 Add a new scheduled task for Exchange Server 2013 scripts
 
 ##Description
