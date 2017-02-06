@@ -11,25 +11,25 @@ When username and password are provided the Register-ScheduledTask cmdlet verfie
 The cmdlet Register-ScheduledTask consumes the user password in clear text
 
 ##Inputs
-.PARAMETER TaskName
+### TaskName
 Name of the scheduled task. 
 
-.PARAMETER ScriptName  
+### ScriptName  
 Script filename to be executed by task scheduler without filepath
 
-.PARAMETER ScriptPath
+### ScriptPath
 Filepath to the PowerShell script to be executed
 
-.PARAMETER GroupName
+### GroupName
 Groupname for task scheduler grouping. Default 'Exchange'   
 
-.PARAMETER Description
+### Description
 The description of the scheduled task. If empty description defaults to "Execute script SCRIPTNAME"
 
-.PARAMETER TaskUser
+### TaskUser
 Username to be set as task user. Format either DOMAIN\USER or USER@DOMAIN   
 
-.PARAMETER Password
+### Password
 Password for TaskUser. 
 If not provided, the task will be automatically be created as "Run only when user is logged on"
 If provided, the task will automatically be created as "Run whether the user is logged on or not"
@@ -45,6 +45,9 @@ None
 ```
 .\New-ScheduledExchangeTask.ps1 -TaskName "My Task" -ScriptName TaskScript1.ps1 -ScriptPath D:\Automation 
 ```
+## Note
+THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
+RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
 ##TechNet Gallery
 Find the script at TechNet Gallery
