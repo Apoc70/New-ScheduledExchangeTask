@@ -1,7 +1,7 @@
 # New-ScheduledExchangeTask.ps1
 Add a new scheduled task for Exchange Server 2013 scripts
 
-##Description
+## Description
 This script adds a new scheduled task for an Exchange Server 2013 environment in a new task scheduler group "Exchange".
 
 Providing a username and password the scheduled task will be configured to "Run whether user is logged on or not"
@@ -10,7 +10,7 @@ When username and password are provided the Register-ScheduledTask cmdlet verfie
 
 The cmdlet Register-ScheduledTask consumes the user password in clear text
 
-##Inputs
+## Parameters
 ### TaskName
 Name of the scheduled task. 
 
@@ -34,10 +34,7 @@ Password for TaskUser.
 If not provided, the task will be automatically be created as "Run only when user is logged on"
 If provided, the task will automatically be created as "Run whether the user is logged on or not"
 
-##Outputs
-None
-
-##Examples
+## Examples
 ```
 .\New-ScheduledExchangeTask.ps1 -TaskName "My Task" -ScriptName TaskScript1.ps1 -ScriptPath D:\Automation -TaskUser DOMAIN\ServiceAccount -Password P@ssw0rd
 ```
@@ -49,29 +46,27 @@ None
 THIS CODE IS MADE AVAILABLE AS IS, WITHOUT WARRANTY OF ANY KIND. THE ENTIRE  
 RISK OF THE USE OR THE RESULTS FROM THE USE OF THIS CODE REMAINS WITH THE USER.
 
-##TechNet Gallery
+## TechNet Gallery
 Find the script at TechNet Gallery
 * https://gallery.technet.microsoft.com/New-ScheduledExchangeTask-449cb182
 
-
-##Credits
+## Credits
 Written by: Thomas Stensitzki
 
-Stay connected:
+## Social
 
 * My Blog: http://justcantgetenough.granikos.eu
 * Archived Blog: http://www.sf-tools.net/
-* Twitter:	https://twitter.com/stensitzki
+* Twitter: https://twitter.com/stensitzki
 * LinkedIn:	http://de.linkedin.com/in/thomasstensitzki
-* Github:	https://github.com/Apoc70
+* Github: https://github.com/Apoc70
 
 For more Office 365, Cloud Security and Exchange Server stuff checkout services provided by Granikos
 
-* Blog:     http://blog.granikos.eu/
-* Website:	https://www.granikos.eu/en/
-* Twitter:	https://twitter.com/granikos_de
+* Blog: http://blog.granikos.eu/
+* Website: https://www.granikos.eu/en/
+* Twitter: https://twitter.com/granikos_de
 
-Additional Credits:
+## Additional Credits:
 * Thanks to Michel de Rooij (https://eightwone.com) for some PowerShell inspiration
 * Thanks to Ed Wilson (https://blogs.technet.microsoft.com/heyscriptingguy) for some more PowerShell inspiration
-
