@@ -18,15 +18,12 @@
   Please send ideas, comments and suggestions to support@granikos.eu 
 
   .LINK 
-  More information can be found at http://www.granikos.eu/en/scripts
-    
-  Learn more about *-ScheduledTask cmdlets at 
+  http://www.granikos.eu/en/scripts 
 
   .DESCRIPTION 
-  This script adds a new scheduled task for an Exchange Server 2013 environment in a 
-  new task scheduler group "Exchange".
+  This script adds a new scheduled task for an Exchange Server 2013 environment in a new task scheduler group "Exchange".
 
-  Providing a username and password the scheduled task will be configured to "Run whether user is logged on or not"
+  Providing a username and password the scheduled task will be configured to "Run whether user is logged on or not".
     
   When username and password are provided the Register-ScheduledTask cmdlet verfies the logon credentials 
   and will fails, if the credentials provided (username/password) are not valid.
@@ -43,7 +40,7 @@
   1.1 Minor PowerShell fixes, no functionality update
 
   .PARAMETER TaskName
-  Name of the scheduled task. 
+  Name of the scheduled task
 
   .PARAMETER ScriptName  
   Script filename to be executed by task scheduler without filepath
@@ -52,16 +49,17 @@
   Filepath to the PowerShell script to be executed
 
   .PARAMETER GroupName
-  Groupname for task scheduler grouping. Default 'Exchange'   
+  Groupname for task scheduler grouping. Default 'Exchange'
 
   .PARAMETER Description
   The description of the scheduled task. If empty description defaults to "Execute script SCRIPTNAME"
 
   .PARAMETER TaskUser
-  Username to be set as task user. Format either DOMAIN\USER or USER@DOMAIN   
+  Username to be set as task user. Format either DOMAIN\USER or USER@DOMAIN
 
   .PARAMETER Password
-  Password for TaskUser. 
+  Password for TaskUser
+  
   If not provided, the task will be automatically be created as "Run only when user is logged on"
   If provided, the task will automatically be created as "Run whether the user is logged on or not"
     
